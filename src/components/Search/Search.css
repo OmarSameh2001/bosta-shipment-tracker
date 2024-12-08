@@ -1,0 +1,45 @@
+.search {
+    background-color: #f3fafb;
+    width: 100%;
+    margin-top: 2%;
+}
+.search-header{
+    color: black;
+    text-align: center;
+}
+.search-header *{
+    margin: 0;
+    padding: 0;
+    font-family: cairo;
+}
+.search-header h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-weight: 1000;
+}
+.search-container {
+    margin-top: 20px;
+    height: 40px;
+}
+.search-icon {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    height: 140%;
+    width: 50px;
+}
+.lens-icon {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+#outlined-basic {
+    margin-left: 10px;
+    height: 100%;
+    width: 300px;
+    text-align: right;
+    background-color: white;
+}
