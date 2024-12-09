@@ -2,7 +2,9 @@
   text-align: center;
   font-family: cairo;
 }
-
+.Top {
+  min-height: 80vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
