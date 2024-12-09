@@ -1,6 +1,6 @@
 import { TextField } from "@mui/material";
 import React, { useState } from "react";
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { CiSearch } from "react-icons/ci";
 import "./Search.css";
 
@@ -10,11 +10,11 @@ interface SearchProps {
 
 const Search: React.FC<SearchProps> = ({ onSearch }) => {
   const [input, setInput] = useState("");
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleSearch = () => {
     if (input.trim()) {
-      //navigate(`?id=${input}`);
+      navigate(`?id=${input}`);
       onSearch(input.trim());
     }
   };

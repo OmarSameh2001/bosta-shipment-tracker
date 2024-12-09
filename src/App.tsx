@@ -1,17 +1,19 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import SearchBar from './components/Search/Search';
-import Result from './components/Result/Result';
-
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Track from "./pages/Track";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <header>
-        <SearchBar onSearch={() => {}} />
-        <Result data={null} loading={false} error={null} />
-      </header>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Track />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
